@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiamu</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Asset 1.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Img de inicio-->
+    <div class="fondo">
+        <div class="texto-fondo">
+            <h1>Aqui estoy again</h1>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="message">
+            <h2>Una cosita te digo</h2>
+            <p>Es que eres una de las mejores personas del mundo, tu llegada a mi vida la verdad fue innesperada, y sí,
+                poco a poco te voy mandando parte de los regalos que te tengo tal vez este sea el último o tal vez no,
+                hasta el día de tu cumple. Te amo con todo mi corazón</p>
+            <p>Amo la manera en la que Dios te puso en mi camino, la manera en la que Dios nos usa a los dos y mucho más
+                cuando adoramos a Dios juntos. Ese día tomando tu mano en la iglesia nunca lo olvidaré, te amo
+                muchísimooooooo. Eres la mejor en serio es.</p>
+
+            <p>Quisiera decir algo en cuanto a ti en lo personal; eres una de las mejores personas que conozco (otra vez lo digo), eres hermosa, eres inteligente, tienes un gran corazón, amo tu pelo, tus ojos, tu sonrisa (nunca dejes de sonreír). Amo la forma en la que tratas a las personas, nunca cambies, gracias por animarme en mis momentos de desanimo, eres una persona muy importante en mi vida, te amooo con todo mi corazón</p>
+
+            <p>Como digo siempre, esto no es el final, vienen más regalos y si este te gustó me gusta que te haya gustado AHHAHAA. Te amo, gracias por estar en mi vida y permitirme acompañarte en todos tus días.</p>
+        </div>
+
+        <div class="musica">
+            <div class="item-musica">
+                <div class="music__img">
+                    <img src="solamente tu.jpg" alt="">
+                </div>
+
+                <div class="music__texts">
+                    <h2>Solamente tu</h2>
+                    <h3>Pablo Alborán</h3>
+                    <div class="music__controls">
+                        <div class="music__btn play" id="play">
+                            <i class="bx bx-play play-btn"></i>
+                            <i class="bx bx-pause pause-btn hide"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio">
+                    <audio class="player__audio" controls id="audio">
+                        <source src="solamente tu.mp3" type="audio/mp3" />
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-regalos">
+        <div class="title-regalos">
+            <h2>Ahora sí, esto es para ti</h2>
+        </div>
+        <div class="regalos">
+            <div class="item-regalos">
+                <div class="img-regalos">
+                    <img src="regalo (1).png" alt="">
+                </div>
+                <div class="text">
+                    <h3><a href="https://gifft.me/b/#rIVLCE63zg" target="_blank">Abre eta cajita</a></h3>
+                </div>
+            </div>
+            <div class="item-regalos">
+                <div class="img-regalos">
+                    <img src="worldwide (1).png" alt="">
+                </div>
+                <div class="text">
+                    <h3><a href="https://earth.google.com/web/search/43º58'41.90+N+15º23'00.65+E/@43.97808289,15.3840444,4.70131683a,3370.17610449d,35y,0h,10.62742286t,0r/data=CmMaORIzGTC_Lh45_UVAIXEfFO9bxC5AKh80M8K6NTgnNDEuOTAiIE4gMTXCujIzJzAwLjY1IiBFGAIgASImCiQJUwxup3t5SEAR6YmTUE5oSEAZ-ei6Si-3A0AhAvuRcn8wAkA" target="_blank">Alguito en el mundo</a></h3>
+                </div>
+            </div>
+            <div class="item-regalos">
+                <div class="img-regalos">
+                    <img src="regalo (1).png" alt="">
+                </div>
+                <div class="text">
+                    <h3><a href="https://gifft.me/b/#XnJOh0MZA0" target="_blank">Abre eta otra cajita</a></h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const audio = document.getElementById("audio");
+        const playPause = document.getElementById("play");
+
+        playPause.addEventListener("click", () => {
+            if (audio.paused || audio.ended) {
+                playPause.querySelector(".pause-btn").classList.toggle("hide");
+                playPause.querySelector(".play-btn").classList.toggle("hide");
+                audio.play();
+            } else {
+                audio.pause();
+                playPause.querySelector(".pause-btn").classList.toggle("hide");
+                playPause.querySelector(".play-btn").classList.toggle("hide");
+            }
+        });
+    </script>
+</body>
+
+</html>
